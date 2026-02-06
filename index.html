@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Surprise 💝</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page 1: Welcome -->
+    <div id="page1" class="page active">
+        <div class="content">
+            <h1 class="greeting">Hello dear 👋</h1>
+            <button class="surprise-btn" onclick="goToPage2()">Click this for a surprise</button>
+        </div>
+    </div>
+
+    <!-- Page 2: Proposal -->
+    <div id="page2" class="page">
+        <div class="content">
+            <h1 class="proposal-text">
+                Would you be my val? ❤️<br>
+                <span class="sub-text">I've been looking forward to this day, now it's here, click below 👇 to answer</span>
+            </h1>
+            <div class="button-container">
+                <button id="noBtn" class="no-btn" onclick="handleNo()">No</button>
+                <button class="yes-btn" onclick="handleYes()">Yes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Success -->
+    <div id="page3" class="page">
+        <div class="content">
+            <h1 class="success-header">She said yes 😁 🎉</h1>
+            <p class="confirmation-text">Yes I accept to be your Val ❤️</p>
+            <button class="screenshot-btn" disabled>Screenshot this page and send to who sent you this 🎉</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
